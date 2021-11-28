@@ -60,7 +60,7 @@ define SNAPSERVER_INSTALL_INIT_SYSTEMD
 #	ln -fs ../../../../usr/lib/systemd/system/snapserver.service \
 #		$(TARGET_DIR)/etc/systemd/system/multi-user.target.wants/snapserver.service
 endef
-else # !BR2_PACKAGE_SNAPCAST_SERVER
+else !BR2_PACKAGE_SNAPCAST_SERVER
 	SNAPCAST_CONF_OPTS += -DBUILD_SERVER=OFF
 endif
 

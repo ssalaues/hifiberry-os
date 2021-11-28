@@ -27,6 +27,7 @@ config BR2_PACKAGE_SNAPCAST_CLIENT
 
 config BR2_PACKAGE_SNAPCAST_SERVER
 	bool "Snapserver"
+	default y
 	help
 	  Snapcast server
 
